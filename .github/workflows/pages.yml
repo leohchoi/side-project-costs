@@ -1,5 +1,6 @@
 # Deploy the static cost dashboard to GitHub Pages.
 # Publishes index.html, app.js, style.css, and data/ only.
+# Pages source: GitHub Actions (enabled 2026-10-30).
 name: Deploy static content to Pages
 
 on:

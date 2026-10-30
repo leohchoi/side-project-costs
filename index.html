@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Side-project costs</title>
+<meta name="description" content="What my side projects cost each month, from vendors' public list prices.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Side-project costs</h1>
+    <p class="lede">What my side projects cost each month, from vendors' public list prices. Updated monthly.</p>
+  </header>
+
+  <section class="summary" aria-label="Monthly total">
+    <div class="total-card">
+      <div class="label">Confirmed monthly total <span id="month-label"></span></div>
+      <div class="total" id="total">–</div>
+      <div class="sub" id="total-note">Usage-based lines and placeholders are excluded from this total.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="chart-h">
+    <h2 id="chart-h">By category</h2>
+    <div id="chart" class="chart"></div>
+  </section>
+
+  <section aria-labelledby="table-h">
+    <h2 id="table-h">Line items</h2>
+    <div class="table-wrap">
+      <table id="costs">
+        <thead>
+          <tr><th>Category</th><th>Item</th><th class="num">List price</th><th>Billing</th><th>Source</th><th>As of</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="hint">"Varies monthly" rows are usage-based and "To be confirmed" rows are placeholders; neither is counted in the total.</p>
+  </section>
+
+  <noscript><p>This page needs JavaScript to read <a href="data/costs.csv">data/costs.csv</a>. The raw data is at that link.</p></noscript>
+
+  <footer>
+    <ul>
+      <li id="asof-note">List prices from vendors' public pricing pages; not actual bills.</li>
+      <li>No comped plans, promotional credits or affiliate/referral links (credits bundled into a paid plan's list price aren't counted separately). All links are plain links.</li>
+      <li>Not affiliated with any vendor listed.</li>
+      <li>Raw data: <a href="data/costs.csv">data/costs.csv</a></li>
+    </ul>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

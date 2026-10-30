@@ -1,0 +1,8 @@
+month,category,item,list_price_usd,billing,source_url,as_of,note
+2026-10,AI subscriptions,Grok Ultra (The X Subscription),200.00,monthly,https://x.ai/pricing,2026-10-30,US list price before tax
+2026-10,AI subscriptions,Claude Max 5x,100.00,monthly,https://claude.com/pricing,2026-10-30,"Max plan, listed from $100 per month; US list price before tax"
+2026-10,AI subscriptions,ChatGPT Pro 100,100.00,monthly,https://chatgpt.com/pricing,2026-10-30,"Pro plan, listed from $100 per month"
+2026-10,Cloud,Cloud hosting & compute,VARIES,usage-based,,,"Varies monthly (usage-based), not counted."
+2026-10,Tools,GitHub account (Free plan),0.00,free,https://github.com/pricing,2026-10-30,Free plan lists $0 USD
+2026-10,Tools,GitHub Pages hosting for this site,0.00,free,https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages,2026-10-30,Available in public repositories on the Free plan
+2026-10,Domains,No custom domain (github.io address),0.00,free,https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages,2026-10-30,Default github.io site address; no domain purchased

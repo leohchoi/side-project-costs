@@ -1,0 +1,43 @@
+:root { --fg:#1f2328; --muted:#59636e; --line:#d8dee4; --bg:#ffffff; --panel:#f6f8fa; --bar:#4a5568; --tbc:#8a6d00; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px 48px; }
+h1 { font-size: 1.9rem; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 32px 0 12px; }
+.lede { color: var(--muted); margin: 0; }
+.summary { margin-top: 24px; }
+.total-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; display: inline-block; min-width: 260px; }
+.total-card .label { color: var(--muted); font-size: .9rem; }
+.total-card .total { font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.total-card .sub { color: var(--muted); font-size: .85rem; }
+.chart svg { max-width: 100%; display: block; }
+.chart text { font: 14px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: var(--fg); }
+.chart .muted { fill: var(--muted); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { background: var(--panel); font-weight: 600; white-space: nowrap; }
+tbody tr:last-child td { border-bottom: 0; }
+.nowrap { white-space: nowrap; }
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tbc { color: var(--tbc); font-weight: 600; }
+td .note { display: block; color: var(--muted); font-size: .82rem; }
+a { color: #0b5cad; }
+.hint { color: var(--muted); font-size: .85rem; }
+footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+footer ul { margin: 0; padding-left: 18px; }
+
+@media (max-width: 640px) {
+  main { padding: 20px 14px 36px; }
+  h1 { font-size: 1.5rem; }
+  .total-card { display: block; min-width: 0; }
+  /* stack table rows as cards */
+  table, thead, tbody, tr, th, td { display: block; }
+  thead { display: none; }
+  .table-wrap { border: 0; }
+  tbody tr { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; padding: 6px 0; }
+  td { border: 0; padding: 4px 12px; display: grid; grid-template-columns: 92px 1fr; gap: 8px; }
+  td::before { content: attr(data-label); color: var(--muted); font-size: .82rem; }
+  td.num { text-align: left; }
+  td > * { min-width: 0; overflow-wrap: anywhere; }
+}

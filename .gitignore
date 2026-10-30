@@ -1,0 +1,6 @@
+_preview/
+scripts/deny.local.txt
+*.local.*
+__pycache__/
+.DS_Store
+_backup*/
